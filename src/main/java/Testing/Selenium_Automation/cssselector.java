@@ -10,14 +10,16 @@ public class cssselector {
 		ChromeDriver driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
-		
+		//1.tagname[attribute='value']
 		driver.get("https://testautomationpractice.blogspot.com/");
+		
 		
 		driver.findElement(By.cssSelector("input[id='name']")).sendKeys("lavkesh");
 		
-		
+		//2.tagname#idvalue
 		driver.findElement(By.cssSelector("input#email")).sendKeys("lavkesh@123gmail.com");
 		
+		//3.tagname.classname
     	driver.findElement(By.cssSelector("input.form-control")).sendKeys("8180935629");
 		
 	//	driver.findElement(By.xpath("//div/textarea")).sendKeys("At post sarwadi taluka karanja ghadge");
@@ -34,7 +36,7 @@ public class cssselector {
     	Thread.sleep(1000);
     	
     	
-    	sel.selectByvalue()
+    	// sel.selectByvalue()
 
 	}
 
