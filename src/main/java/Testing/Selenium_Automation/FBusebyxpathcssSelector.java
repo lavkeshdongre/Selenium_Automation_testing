@@ -17,8 +17,19 @@ public class FBusebyxpathcssSelector {
 		driver.findElement(By.xpath("//input[@id='_R_1kl2p4jikacppb6amH1_']")).sendKeys("Dongre");
 		Thread.sleep(1000);
 		
-		driver.findElement(By.cssSelector("input[aria-label='Select day']")).click();
+		 //this is for the dropdown option 
+	    Select sel = new Select(driver.findElement(By.id("country")));
+	    
+	    sel.selectByVisibleText("India");
+	    Thread.sleep(1000);
+	    sel.selectByIndex(3);
+	    Thread.sleep(1000);
+	    sel.selectByValue("china");
+	    Thread.sleep(1000);
 		
+		driver.findElement(By.cssSelector("input[id='_r_15_']")).sendKeys("8180935629");
+		Thread.sleep(1000);
+	
 		driver.close();
 		
 	}

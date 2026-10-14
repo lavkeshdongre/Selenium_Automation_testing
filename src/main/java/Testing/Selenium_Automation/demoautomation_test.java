@@ -45,25 +45,42 @@ public class demoautomation_test {
 		
 		
 		//driver.findElement(By.id("msdd")).click();
-		//driver.findElement(By.linkText("Hindi")).click();
+		
+	//	driver.findElement(By.xpath("//a[normalize-space()='English']")).click();
+		//driver.findElement(By.xpath("//a[text()='Catalan']")).click();
+		//Thread.sleep(1000);
 		
 		//driver.findElement(By.xpath("//select[@id='Skills']")).click();
-		  WebElement Skills = driver.findElement(By.id("Skills"));
+		 WebElement Skills = driver.findElement(By.id("Skills"));
 
-	      Select s = new Select(Skills);
+	     Select s = new Select(Skills);
 
-	        s.selectByVisibleText("Analytics");
+	     s.selectByVisibleText("Analytics");
 	        
 	        
-	        Thread.sleep(1000);
+	    Thread.sleep(1000);
 	      
-	     WebElement country = driver.findElement(By.id("select2-country-results"));
-	     Select c = new Select(country);
-	     
-	     c.selectByIndex(2);
+	    Select selC = new Select(driver.findElement(By.xpath("//select[@id='countries']")));
+		selC.selectByVisibleText("Select Country");
+		
+		
+		//select Country field
+		driver.findElement(By.xpath("//span[contains(@class,'select2-selection--single')]")).click();
+		Select se = new Select(driver.findElement(By.xpath("//select[@id='country']")));
+	    se.selectByValue("India");
+		driver.findElement(By.xpath("//span[contains(@class,'select2-selection--single')]")).click();
+		
 	        
 		       
-	      
+		//ACCESSING DOB FIELDS
+		Select dobYear = new Select(driver.findElement(By.xpath("//select[@id='yearbox']")));
+		dobYear.selectByVisibleText("2004");
+				
+		Select dobMonth = new Select(driver.findElement(By.xpath("//select[@Placeholder='Month']")));
+		dobMonth.selectByVisibleText("January");
+				
+		Select dobDate = new Select(driver.findElement(By.xpath("//select[@id='daybox']")));
+		dobDate.selectByVisibleText("24");
 		        
 		
 		
