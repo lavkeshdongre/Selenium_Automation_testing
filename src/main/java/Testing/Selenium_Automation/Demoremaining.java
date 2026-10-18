@@ -205,6 +205,9 @@ public class Demoremaining {
         
         Thread.sleep(6000);
         
+        driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+        Thread.sleep(1000);
+        
         
         
         driver.quit();
