@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class Demoremaining {
 
@@ -18,6 +19,27 @@ public class Demoremaining {
         driver.manage().window().maximize();
 
         driver.get("https://testautomationpractice.blogspot.com/");
+        
+        driver.findElement(By.id("name")).sendKeys("lavkesh");
+        driver.findElement(By.id("email")).sendKeys("lavkeshdongre66@gmail.com");
+        driver.findElement(By.id("phone")).sendKeys("8180935629");
+        
+        driver.findElement(By.id("textarea")).sendKeys("At Post sarwadi Dist Wardha");
+        
+        driver.findElement(By.xpath("//input[@id='male']")).click();
+
+        List<WebElement> Checkbox = driver.findElements(
+            By.xpath("//input[@type='checkbox']")
+        );
+
+        for (int i = 0; i < Checkbox.size(); i++) {
+
+            if (!Checkbox.get(i).isSelected()) {
+                Checkbox.get(i).click();
+            }
+
+            Thread.sleep(1000);
+        }
 
         driver.findElement(By.xpath("//option[@value='red']")).click();
 
@@ -202,6 +224,7 @@ public class Demoremaining {
         
         WebElement file = driver.findElement(By.cssSelector("input[type='file']"));
         file.sendKeys("C:\\Users\\HP\\OneDrive\\Desktop\\Lavkesh Dongare Joining letter - signed.pdf");
+        System.out.println("file Selected successfully");
         
         Thread.sleep(6000);
         
