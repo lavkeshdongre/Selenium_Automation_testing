@@ -2,35 +2,37 @@ package Testing.Selenium_Automation;
 
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import java.io.File;
 
-public class Demoremaining {
+public class BlogspotWhole {
 
-    
-
-	public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         ChromeDriver driver = new ChromeDriver();
 
         driver.manage().window().maximize();
 
         driver.get("https://testautomationpractice.blogspot.com/");
-        
+
         driver.findElement(By.id("name")).sendKeys("lavkesh");
+
         driver.findElement(By.id("email")).sendKeys("lavkeshdongre66@gmail.com");
+
         driver.findElement(By.id("phone")).sendKeys("8180935629");
-        
+
         driver.findElement(By.id("textarea")).sendKeys("At Post sarwadi Dist Wardha");
-        
+
         driver.findElement(By.xpath("//input[@id='male']")).click();
 
         List<WebElement> Checkbox = driver.findElements(
-            By.xpath("//input[@type='checkbox']")
-        );
+                By.xpath("//input[@type='checkbox']"));
 
         for (int i = 0; i < Checkbox.size(); i++) {
 
@@ -41,20 +43,32 @@ public class Demoremaining {
             Thread.sleep(1000);
         }
 
+        WebElement Country = driver.findElement(By.id("country"));
+
+        Select dropdown = new Select(Country);
+
+        dropdown.selectByIndex(3);
+
+        Thread.sleep(1000);
+
         driver.findElement(By.xpath("//option[@value='red']")).click();
 
         System.out.println("red color is selected");
+
         Thread.sleep(1000);
 
         driver.findElement(By.xpath("//option[@value='dog']")).click();
+
         System.out.println("dog printed");
+
         Thread.sleep(1000);
 
         driver.findElement(By.id("datepicker")).click();
+
         System.out.println("box open");
-        Thread.sleep(1000);
 
         driver.findElement(By.cssSelector("a[data-date='17']")).click();
+
         System.out.println("date selected");
 
         Thread.sleep(1000);
@@ -62,16 +76,21 @@ public class Demoremaining {
         driver.findElement(By.name("SelectedDate")).click();
 
         driver.findElement(By.cssSelector("a[data-date='18']")).click();
+
         Thread.sleep(1000);
 
         driver.findElement(By.id("start-date")).sendKeys("11");
+
         driver.findElement(By.id("start-date")).sendKeys("12");
+
         driver.findElement(By.id("start-date")).sendKeys("2004");
 
         System.out.println("button click successfully ");
+
         Thread.sleep(1000);
 
         driver.findElement(By.id("end-date")).sendKeys("1");
+
         driver.findElement(By.id("end-date")).sendKeys("1");
 
         Thread.sleep(1000);
@@ -97,19 +116,16 @@ public class Demoremaining {
             }
         }
 
-        // Step 1: Click on page number 2
         driver.findElement(By.xpath("//a[normalize-space()='2']")).click();
 
         Thread.sleep(1000);
 
         System.out.println("Page 2 is selected");
 
-        // Step 2: Find all checkboxes on the current page
         List<WebElement> check1 = driver.findElements(
                 By.xpath("//table[@id='productTable']//input[@type='checkbox']")
         );
 
-        // Step 3: Select all checkboxes using normal for loop
         for (int i = 0; i < check1.size(); i++) {
 
             if (!check1.get(i).isSelected()) {
@@ -122,19 +138,16 @@ public class Demoremaining {
 
         System.out.println("All checkboxes on page 2 are selected");
 
-        // 3 button
         driver.findElement(By.xpath("//a[normalize-space()='3']")).click();
 
         Thread.sleep(1000);
 
         System.out.println("Page 3 is selected");
 
-        // Step 2: Find all checkboxes on the current page
         List<WebElement> check2 = driver.findElements(
                 By.xpath("//table[@id='productTable']//input[@type='checkbox']")
         );
 
-        // Step 3: Select all checkboxes using normal for loop
         for (int i = 0; i < check2.size(); i++) {
 
             if (!check2.get(i).isSelected()) {
@@ -147,28 +160,22 @@ public class Demoremaining {
 
         System.out.println("All checkboxes on page 3 are selected");
 
-        // 4 button
         driver.findElement(By.xpath("//a[normalize-space()='4']")).click();
-
-      //  Thread.sleep(1000);
 
         System.out.println("Page 4 is selected");
 
-        // Step 2: Find all checkboxes on the current page
         List<WebElement> check3 = driver.findElements(
                 By.xpath("//table[@id='productTable']//input[@type='checkbox']")
         );
 
-        // Step 3: Select all checkboxes using normal for loop
         for (int i = 0; i < check3.size(); i++) {
 
             if (!check3.get(i).isSelected()) {
 
                 check3.get(i).click();
 
-            //    Thread.sleep(1000);
-
                 System.out.println("Checkbox " + (i + 1) + " is selected");
+
             }
         }
 
@@ -176,28 +183,16 @@ public class Demoremaining {
 
         driver.findElement(By.id("apple")).click();
 
-//        Thread.sleep(1000);
-
         driver.navigate().back();
-
-  //      Thread.sleep(1000);
 
         driver.findElement(By.id("lenovo")).click();
 
-    //    Thread.sleep(1000);
-
         driver.navigate().back();
-
-      //  Thread.sleep(1000);
 
         driver.findElement(By.id("dell")).click();
 
-        //Thread.sleep(1000);
-
         driver.navigate().back();
-        
-       
-        
+
         List<WebElement> Errorlink1 = driver.findElements(By.className("link"));
 
         for (int i = 0; i < Errorlink1.size(); i++) {
@@ -206,35 +201,90 @@ public class Demoremaining {
 
             System.out.println(l.getText());
 
-           // Thread.sleep(1000);
         }
-        
-        //footer Section
-        
+
         driver.findElement(By.name("input1")).sendKeys("Hello my name is lavkesh ");
+
         driver.findElement(By.id("btn1")).click();
-        
+
         Thread.sleep(1000);
+
         driver.findElement(By.name("input2")).sendKeys("i am from wardha  ");
+
         driver.findElement(By.id("btn2")).click();
-        
+
         driver.findElement(By.name("input3")).sendKeys("currently leaving at the karve nagar pune  ");
+
         driver.findElement(By.id("btn3")).click();
+
+        //WebElement file = driver.findElement(By.xpath("//*[@id='shadow_host']//input[3]"));
+
+      //  file.sendKeys("\"C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-09-29 195241.png\"");
+
+     //  System.out.println("file Selected successfully");
         
-        
-        WebElement file = driver.findElement(By.cssSelector("input[type='file']"));
-        file.sendKeys("C:\\Users\\HP\\OneDrive\\Desktop\\Lavkesh Dongare Joining letter - signed.pdf");
-        System.out.println("file Selected successfully");
-        
+         driver.findElement(By.linkText("Blog")).click();
+         driver.navigate().back();
+
         Thread.sleep(6000);
-        
+
         driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+        System.out.println("Checkbox is selected ");
+
         Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@type='text']")).sendKeys("youtube");
         
         
+        //Whole page tested this time to test the right side of the page 
         
-        driver.quit();
+        driver.findElement(By.id("Wikipedia1_wikipedia-search-input")).sendKeys("tablet");
+        
+         driver.findElement(By.cssSelector("button[name='start'][onclick='toggleButton(this)']")).click();
+        
+        Thread.sleep(2000);
+        
+        //Alert interface 
+
+		driver.findElement(By.id("alertBtn")).click();
+		Thread.sleep(1000);
+		
+		Alert al = driver.switchTo().alert();
+		
+		System.out.println("The Alter text is :-"+ al.getText());
+		al.accept();
+		
+		driver.findElement(By.id("confirmBtn")).click();
+		Thread.sleep(1000);
+		Alert al1 =driver.switchTo().alert();
+		al1.dismiss();
+		
+		Thread.sleep(1000);
+	    driver.findElement(By.id("promptBtn")).click();
+	    Thread.sleep(1000);
+	    driver.switchTo().alert().sendKeys("lavkesh");
+	    Thread.sleep(1000);
+	   driver.switchTo().alert().accept();
+	   Thread.sleep(1000);
+	    
+		WebElement pointmebutn=driver.findElement(By.xpath("//button[text()='Point Me']"));
+		
+		Actions ac = new Actions(driver);
+		
+		ac.moveToElement(pointmebutn).build().perform();
+		Thread.sleep(2000);
+	
+	     WebElement doubleclick= driver.findElement(By.xpath("//button[@ondblclick='myFunction1()']"));
+	     
+	     Actions clickActions = new Actions(driver);
+	     clickActions.doubleClick();
+	     
+	     Thread.sleep(2000);
+	     
+
+        //driver.quit();
+
         driver.close();
 
     }
+
 }
