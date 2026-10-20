@@ -2,9 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-  <parameter name="P" value="90"></parameter>
+
+  <parameter name="num1" value="7"/>
+<parameter name="num2" value="2"/>
+  <parameter name="num3" value="10"/>
+<parameter name="num4" value="3"/>
     <classes>
-      <class name="Testing.Selenium_Automation.parameter"/>
+      <class name="Testing.Selenium_Automation.Calci"/>
       
     </classes>
   </test> <!-- Test -->
