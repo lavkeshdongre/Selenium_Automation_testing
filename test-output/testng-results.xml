@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-21T10:04:17 IST" name="Default suite" finished-at="2026-10-21T10:04:22 IST" duration-ms="5562">
+  <suite started-at="2026-10-21T20:46:37 IST" name="Suite1" finished-at="2026-10-21T20:46:59 IST" duration-ms="21867">
     <groups>
     </groups>
-    <test started-at="2026-10-21T10:04:17 IST" name="Default test" finished-at="2026-10-21T10:04:22 IST" duration-ms="5562">
-      <class name="Testing.Selenium_Automation.loginsaucedemo">
-        <test-method signature="launch()[pri:0, instance:Testing.Selenium_Automation.loginsaucedemo@2b662a77]" started-at="2026-10-21T10:04:17 IST" name="launch" finished-at="2026-10-21T10:04:20 IST" duration-ms="3222" status="PASS">
+    <test started-at="2026-10-21T20:46:37 IST" name="Test1" finished-at="2026-10-21T20:46:59 IST" duration-ms="21867">
+      <class name="Testing.Selenium_Automation.parrallelTesting">
+        <test-method signature="test2()[pri:0, instance:Testing.Selenium_Automation.parrallelTesting@7f0eb4b4]" started-at="2026-10-21T20:46:37 IST" name="test2" finished-at="2026-10-21T20:46:56 IST" duration-ms="19081" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="login1st()[pri:1, instance:Testing.Selenium_Automation.loginsaucedemo@2b662a77]" started-at="2026-10-21T10:04:20 IST" name="login1st" finished-at="2026-10-21T10:04:22 IST" duration-ms="2255" status="PASS">
+        </test-method> <!-- test2 -->
+        <test-method signature="test1()[pri:0, instance:Testing.Selenium_Automation.parrallelTesting@7f0eb4b4]" started-at="2026-10-21T20:46:37 IST" name="test1" finished-at="2026-10-21T20:46:59 IST" duration-ms="21809" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login1st -->
-      </class> <!-- Testing.Selenium_Automation.loginsaucedemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test1 -->
+      </class> <!-- Testing.Selenium_Automation.parrallelTesting -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite1 -->
 </testng-results>
