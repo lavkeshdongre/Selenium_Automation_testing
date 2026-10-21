@@ -8,8 +8,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.io.File;
+import java.time.Duration;
 
 public class BlogspotWhole {
 
@@ -40,7 +44,7 @@ public class BlogspotWhole {
                 Checkbox.get(i).click();
             }
 
-            Thread.sleep(1000);
+            
         }
 
         WebElement Country = driver.findElement(By.id("country"));
@@ -49,7 +53,7 @@ public class BlogspotWhole {
 
         dropdown.selectByIndex(3);
 
-        Thread.sleep(1000);
+        
 
         driver.findElement(By.xpath("//option[@value='red']")).click();
 
@@ -271,7 +275,7 @@ public class BlogspotWhole {
 		Actions ac = new Actions(driver);
 		
 		ac.moveToElement(pointmebutn).build().perform();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	
 	     WebElement doubleclick= driver.findElement(By.xpath("//button[@ondblclick='myFunction1()']"));
 	     
@@ -279,11 +283,68 @@ public class BlogspotWhole {
 	     clickActions.doubleClick();
 	     
 	     Thread.sleep(2000);
+			
+			
+			//drag
+			WebElement drag = driver.findElement(By.id("draggable"));
+			Thread.sleep(1000);
+			
+			//drop
+			WebElement drop = driver.findElement(By.id("droppable"));
+			
+			// action
+			
+			Actions act=new Actions(driver);
+			
+			act.dragAndDrop(drag, drop).build().perform();
+			
+			Thread.sleep(1000);
+			//slider
+			WebElement leftslider= driver.findElement(By.xpath("//span[@style='left: 15%;']"));
+			
+			Actions a =new Actions(driver);
+			
+			a.dragAndDropBy(leftslider,80,0).build().perform();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("//input[@id='comboBox']")).click();
+
+			driver.findElement(By.xpath("//*[@id=\"dropdown\"]/div[2]")).click();
+			
+			Thread.sleep(1000);
+			
+			//upload single file 
+			
+			driver.findElement(By.xpath("//*[@id='singleFileInput']")).sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("//*[@id=\"singleFileForm\"]/button")).click();
+			
+			Thread.sleep(1000);
+			WebElement file=driver.findElement(By.xpath("//*[@id=\"multipleFilesInput\"]"));
+			file.sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
+			file.sendKeys("C:\\\\Users\\\\HP\\\\Downloads\\\\Lavkesh_Dongre_8180935629_testing.docx");
+			
+			
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("//*[@id=\"multipleFilesForm\"]/button")).click();
+			
+			driver.findElement(By.xpath("//*[@id='PageList1']/div/ul/li[1]")).click();
+			
+			
+			driver.findElement(By.xpath("//*[@id='PageList1']/div/ul/li[2]/a")).click();
+			
+			
+			driver.findElement(By.xpath("//*[@id='PageList1']/div/ul/li[3]")).click();
+			
+			
+			
 	     
 
         //driver.quit();
 
-        driver.close();
+        
 
     }
 
