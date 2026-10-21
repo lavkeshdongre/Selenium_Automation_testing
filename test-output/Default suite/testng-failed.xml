@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testing.Selenium_Automation.Calci">
+      <class name="Testing.Selenium_Automation.loginsaucedemo">
         <methods>
-          <include name="sub"/>
-          <include name="add"/>
-          <include name="launchBrowser"/>
+          <include name="login1st"/>
         </methods>
-      </class> <!-- Testing.Selenium_Automation.Calci -->
+      </class> <!-- Testing.Selenium_Automation.loginsaucedemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

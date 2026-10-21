@@ -220,23 +220,23 @@ public class BlogspotWhole {
         driver.findElement(By.name("input3")).sendKeys("currently leaving at the karve nagar pune  ");
 
         driver.findElement(By.id("btn3")).click();
+        driver.findElement(By.linkText("Blog")).click();
+        driver.navigate().back();
 
-        //WebElement file = driver.findElement(By.xpath("//*[@id='shadow_host']//input[3]"));
+       Thread.sleep(6000);
+       driver.findElement(By.xpath("//*[@id='shadow_host']//input[1]")).sendKeys("youtube");
 
-      //  file.sendKeys("\"C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2026-09-29 195241.png\"");
+        driver.findElement(By.xpath("//*[@id='shadow_host']//input[3]")).sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
 
-     //  System.out.println("file Selected successfully");
+        System.out.println("file Selected successfully");
         
-         driver.findElement(By.linkText("Blog")).click();
-         driver.navigate().back();
+       
 
-        Thread.sleep(6000);
-
-        driver.findElement(By.xpath("//input[@type='checkbox']")).click();
+        driver.findElement(By.xpath("//*[@id=\"shadow_host\"]//input[2]")).click();
         System.out.println("Checkbox is selected ");
 
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//input[@type='text']")).sendKeys("youtube");
+        
         
         
         //Whole page tested this time to test the right side of the page 
@@ -321,9 +321,9 @@ public class BlogspotWhole {
 			driver.findElement(By.xpath("//*[@id=\"singleFileForm\"]/button")).click();
 			
 			Thread.sleep(1000);
-			WebElement file=driver.findElement(By.xpath("//*[@id=\"multipleFilesInput\"]"));
-			file.sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
-			file.sendKeys("C:\\\\Users\\\\HP\\\\Downloads\\\\Lavkesh_Dongre_8180935629_testing.docx");
+			WebElement file1=driver.findElement(By.xpath("//*[@id=\"multipleFilesInput\"]"));
+			file1.sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
+			file1.sendKeys("C:\\\\Users\\\\HP\\\\Downloads\\\\Lavkesh_Dongre_8180935629_testing.docx");
 			
 			
 			Thread.sleep(1000);
