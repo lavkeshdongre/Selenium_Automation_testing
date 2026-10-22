@@ -1,23 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-22T09:01:04 IST" name="Suite1" finished-at="2026-10-22T09:01:04 IST" duration-ms="114">
+  <suite started-at="2026-10-22T23:38:46 IST" name="Default suite" finished-at="2026-10-22T23:39:10 IST" duration-ms="24495">
     <groups>
     </groups>
-    <test started-at="2026-10-22T09:01:04 IST" name="Test1" finished-at="2026-10-22T09:01:04 IST" duration-ms="114">
-      <class name="parellel.simultaneous2">
-        <test-method signature="test2()[pri:0, instance:parellel.simultaneous2@49139829]" started-at="2026-10-22T09:01:04 IST" name="test2" finished-at="2026-10-22T09:01:04 IST" duration-ms="20" status="PASS">
+    <test started-at="2026-10-22T23:38:46 IST" name="Default test" finished-at="2026-10-22T23:39:10 IST" duration-ms="24495">
+      <class name="Swaglablogintest">
+        <test-method signature="verify_login(java.lang.String,java.lang.String)[pri:0, instance:Swaglablogintest@4f83df68]" started-at="2026-10-22T23:38:46 IST" name="verify_login" data-provider="data" finished-at="2026-10-22T23:38:51 IST" duration-ms="5671" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-      </class> <!-- parellel.simultaneous2 -->
-      <class name="parellel.simultaneous_testing">
-        <test-method signature="test1()[pri:0, instance:parellel.simultaneous_testing@7f0eb4b4]" started-at="2026-10-22T09:01:04 IST" name="test1" finished-at="2026-10-22T09:01:04 IST" duration-ms="20" status="PASS">
+        </test-method> <!-- verify_login -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String)[pri:0, instance:Swaglablogintest@4f83df68]" started-at="2026-10-22T23:38:51 IST" name="verify_login" data-provider="data" finished-at="2026-10-22T23:38:54 IST" duration-ms="2511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- parellel.simultaneous_testing -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- verify_login -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String)[pri:0, instance:Swaglablogintest@4f83df68]" started-at="2026-10-22T23:38:54 IST" name="verify_login" data-provider="data" finished-at="2026-10-22T23:39:01 IST" duration-ms="7653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String)[pri:0, instance:Swaglablogintest@4f83df68]" started-at="2026-10-22T23:39:01 IST" name="verify_login" data-provider="data" finished-at="2026-10-22T23:39:06 IST" duration-ms="4620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String)[pri:0, instance:Swaglablogintest@4f83df68]" started-at="2026-10-22T23:39:06 IST" name="verify_login" data-provider="data" finished-at="2026-10-22T23:39:10 IST" duration-ms="3957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+      </class> <!-- Swaglablogintest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
