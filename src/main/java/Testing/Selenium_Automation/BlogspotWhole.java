@@ -224,15 +224,15 @@ public class BlogspotWhole {
         driver.navigate().back();
 
        Thread.sleep(6000);
-       driver.findElement(By.xpath("//*[@id='shadow_host']//input[1]")).sendKeys("youtube");
+     //  driver.findElement(By.xpath("//*[@id='shadow_host']//input[1]")).sendKeys("youtube");
 
-        driver.findElement(By.xpath("//*[@id='shadow_host']//input[3]")).sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
+        //driver.findElement(By.xpath("//*[@id='shadow_host']//input[3]")).sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
 
         System.out.println("file Selected successfully");
         
        
 
-        driver.findElement(By.xpath("//*[@id=\"shadow_host\"]//input[2]")).click();
+       // driver.findElement(By.xpath("//*[@id=\"shadow_host\"]//input[2]")).click();
         System.out.println("Checkbox is selected ");
 
         Thread.sleep(1000);
