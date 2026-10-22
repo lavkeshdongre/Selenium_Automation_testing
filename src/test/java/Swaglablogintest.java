@@ -25,6 +25,7 @@ public class Swaglablogintest {
       new Object[] { "problem_user", "secret_sauce" },
       new Object[] { "performance_glitch_user", "secret_sauce" },
       new Object[] { "error_user", "secret_sauce" },
+      new Object[] { "standard_user", "secret_sauce" },
     };
   }
 }
