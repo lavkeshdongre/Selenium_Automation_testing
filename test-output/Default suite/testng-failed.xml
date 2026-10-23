@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Swaglablogintest">
+      <class name="Listner_pom_framework.Listner_Execute">
         <methods>
-          <include name="verify_login" invocation-numbers="3"/>
+          <include name="verify"/>
         </methods>
-      </class> <!-- Swaglablogintest -->
+      </class> <!-- Listner_pom_framework.Listner_Execute -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

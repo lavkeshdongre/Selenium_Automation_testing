@@ -221,9 +221,9 @@ public class BlogspotWhole {
 
         driver.findElement(By.id("btn3")).click();
         driver.findElement(By.linkText("Blog")).click();
-        driver.navigate().back();
+        driver.navigate().back();z
 
-       Thread.sleep(6000);
+       Thread.sleep(1000);
      //  driver.findElement(By.xpath("//*[@id='shadow_host']//input[1]")).sendKeys("youtube");
 
         //driver.findElement(By.xpath("//*[@id='shadow_host']//input[3]")).sendKeys("C:\\Users\\HP\\Downloads\\Lavkesh_Dongre_8180935629_testing.docx");
