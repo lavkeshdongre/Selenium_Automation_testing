@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-23T10:43:44 IST" name="Default suite" finished-at="2026-10-23T10:44:00 IST" duration-ms="15808">
+  <suite started-at="2026-10-24T09:53:59 IST" name="Default suite" finished-at="2026-10-24T09:54:03 IST" duration-ms="3157">
     <groups>
     </groups>
-    <test started-at="2026-10-23T10:43:44 IST" name="Default test" finished-at="2026-10-23T10:44:00 IST" duration-ms="15808">
-      <class name="Listner_pom_framework.Listner_Execute">
-        <test-method signature="launch()[pri:1, instance:Listner_pom_framework.Listner_Execute@c8c12ac]" started-at="2026-10-23T10:43:44 IST" name="launch" finished-at="2026-10-23T10:43:58 IST" duration-ms="13176" status="PASS">
+    <test started-at="2026-10-24T09:53:59 IST" name="Default test" finished-at="2026-10-24T09:54:03 IST" duration-ms="3157">
+      <class name="Testing.Selenium_Automation.external_fileread">
+        <test-method signature="filereadtest()[pri:0, instance:Testing.Selenium_Automation.external_fileread@2b662a77]" started-at="2026-10-24T09:53:59 IST" name="filereadtest" finished-at="2026-10-24T09:54:03 IST" duration-ms="3084" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launch -->
-        <test-method signature="verify()[pri:2, instance:Listner_pom_framework.Listner_Execute@c8c12ac]" started-at="2026-10-23T10:43:58 IST" name="verify" finished-at="2026-10-23T10:43:58 IST" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify -->
-        <test-method signature="login()[pri:3, instance:Listner_pom_framework.Listner_Execute@c8c12ac]" started-at="2026-10-23T10:43:58 IST" name="login" finished-at="2026-10-23T10:44:00 IST" duration-ms="2510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Listner_pom_framework.Listner_Execute -->
+        </test-method> <!-- filereadtest -->
+      </class> <!-- Testing.Selenium_Automation.external_fileread -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -221,7 +221,7 @@ public class BlogspotWhole {
 
         driver.findElement(By.id("btn3")).click();
         driver.findElement(By.linkText("Blog")).click();
-        driver.navigate().back();z
+        driver.navigate().back();
 
        Thread.sleep(1000);
      //  driver.findElement(By.xpath("//*[@id='shadow_host']//input[1]")).sendKeys("youtube");
