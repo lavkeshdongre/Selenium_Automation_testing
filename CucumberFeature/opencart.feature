@@ -1,6 +1,6 @@
 Feature: opencart
 
-Scenarios: To verify that after user fill all details in the  page field user should be register succeesfully
+Scenario: To verify that after user fill all details in the  page field user should be register succeesfully
 
 Given  Opencart website should be open 
 When  All details enter in the feild
