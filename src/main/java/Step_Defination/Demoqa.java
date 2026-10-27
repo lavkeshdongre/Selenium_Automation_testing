@@ -97,20 +97,21 @@ public class Demoqa {
 //	   );
 //
 //	   submit.click();
-	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-	   WebElement submit = wait.until(
-	       ExpectedConditions.visibilityOfElementLocated(By.id("submit"))
-	   );
-
-	   ((JavascriptExecutor) driver).executeScript(
-	       "arguments[0].scrollIntoView({block:'center'});", submit
-	   );
-
-	   wait.until(ExpectedConditions.elementToBeClickable(By.id("submit"))).click();
-		
-		System.out.println("Data inserted in feild successfully");
-		
+//	   WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//
+//	   WebElement submit = wait.until(
+//	       ExpectedConditions.visibilityOfElementLocated(By.id("submit"))
+//	   );
+//
+//	   ((JavascriptExecutor) driver).executeScript(
+//	       "arguments[0].scrollIntoView({block:'center'});", submit
+//	   );
+//
+//	   wait.until(ExpectedConditions.elementToBeClickable(By.id("submit"))).click();
+//		
+//		System.out.println("Data inserted in feild successfully");
+//		
+	  
 		
 		
 	}
