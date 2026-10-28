@@ -13,6 +13,7 @@ public class Swaglablogintest {
 	  
 	  driver.get("https://www.saucedemo.com/");
 	  driver.findElement(By.xpath("//*[@id=\"user-name\"]")).sendKeys(n);
+	  
 	  driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys(s);
 	  
 	  driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
