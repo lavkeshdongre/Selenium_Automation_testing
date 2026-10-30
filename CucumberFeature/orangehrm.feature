@@ -1,5 +1,6 @@
 Feature: orange hrm login page 
 
+@Smoke
 Scenario: verify that after user enter the valid credential the orange hrm dashboard should be visible 
 
 Given oranghrm browser should be launch  

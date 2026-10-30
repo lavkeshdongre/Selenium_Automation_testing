@@ -1,5 +1,6 @@
 Feature: Swaglab website login logout check
 
+@Smoke
 Scenario: verify that the login and logout successfully
  
  Given launch the swaglab website 
